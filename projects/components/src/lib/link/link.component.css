@@ -1,0 +1,12 @@
+:host(.link) {
+  color: var(--clr-100);
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-md);
+  text-decoration: none;
+  cursor: pointer;
+}

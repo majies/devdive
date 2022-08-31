@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { TypographyModule } from "@components";
+import { LinkModule } from "@components";
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { TypographyModule } from "@components";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TypographyModule
+    LinkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
