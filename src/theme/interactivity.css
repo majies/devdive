@@ -1,0 +1,18 @@
+:root {
+
+  --animation-speed-super-slow: 1s;
+  --animation-speed-slow: 500ms;
+  --animation-speed-normal: 300ms;
+  --animation-speed-fast: 150ms;
+  --animation-speed-super-fast: 50ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation-speed-super-slow: 0;
+    --animation-speed-slow: 0;
+    --animation-speed-normal: 0;
+    --animation-speed-fast: 0;
+    --animation-speed-super-fast: 0;
+  }
+}

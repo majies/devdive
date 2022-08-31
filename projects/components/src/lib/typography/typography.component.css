@@ -1,0 +1,69 @@
+:host(.type) {
+  font-family: var(--font-family);
+}
+
+:host(.type--align-center) {
+  text-align: center;
+}
+
+:host(.type--margin-bottom) {
+  margin-bottom: var(--spacing-md);
+}
+
+:host(.type--colour-default) {
+  color: var(--clr-90);
+}
+
+:host(.type--colour-white) {
+  color: var(--clr-100);
+}
+
+:host(.type--colour-inherit) {
+  color: inherit;
+}
+
+:host(.type--size-xs) {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+:host(.type--size-sm) {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+:host(.type--size-md) {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+:host(.type--size-lg) {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+:host(.type--size-xl) {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+:host(.type--size-2xl) {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+:host(.type--weight-light) {
+  font-weight: var(--font-weight-light);
+}
+
+:host(.type--weight-regular) {
+  font-weight: var(--font-weight-regular);
+}
+
+:host(.type--weight-bold) {
+  font-weight: var(--font-weight-bold);
+}
+
+:host(.type--weight-heavy) {
+  font-weight: var(--font-weight-heavy);
+}
