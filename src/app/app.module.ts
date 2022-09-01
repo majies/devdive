@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {IconModule, LinkModule} from "@components";
+import {ButtonModule} from "../../projects/components/src/lib/button";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {IconModule, LinkModule} from "@components";
     BrowserModule,
     AppRoutingModule,
     LinkModule,
-    IconModule
+    IconModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

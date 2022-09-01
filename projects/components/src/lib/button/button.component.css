@@ -1,0 +1,14 @@
+:host(.button) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 24px;
+  height: 32px;
+  background-color: var(--clr-primary);
+  border: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-md);
+  border-radius: 8px;
+}
