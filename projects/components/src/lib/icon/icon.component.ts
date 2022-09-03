@@ -1,4 +1,4 @@
-import {Component, ViewChild, ViewContainerRef} from '@angular/core';
+import {Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {Icon} from "./icon.interface";
 import {iconMapper} from "./icon.mapper";
@@ -9,7 +9,7 @@ import {iconMapper} from "./icon.mapper";
   styleUrls: ['./icon.component.css']
 })
 export class IconComponent {
-  icon: Icon = 'coffee';
+  @Input() icon!: Icon;
 
   @ViewChild('iconContainer', {read: ViewContainerRef})
   iconContainer?: ViewContainerRef;
@@ -19,6 +19,10 @@ export class IconComponent {
   }
 
   async ngAfterViewInit() {
+    if (!this.icon) {
+      throw new Error('Icon is a required input')
+    }
+
     const icon = await this.getIcon();
     const component = this.iconContainer?.createComponent(FaIconComponent);
 

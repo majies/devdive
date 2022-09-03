@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {IconModule, LinkModule, ButtonModule, HeaderModule} from "@components";
+import {IconModule, LinkModule, ButtonModule, HeaderModule, TabListModule} from "@components";
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import {IconModule, LinkModule, ButtonModule, HeaderModule} from "@components";
     LinkModule,
     IconModule,
     ButtonModule,
-    HeaderModule
+    HeaderModule,
+    TabListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

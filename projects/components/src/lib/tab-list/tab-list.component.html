@@ -1,0 +1,18 @@
+<div class="tab-list__tabs">
+  <button
+    *ngFor="let tab of tabs; let tabIndex = index"
+    ddTabButton
+    class="tab-list__tab"
+    [class.tab-list__tab--active]="activeTabIndex === tabIndex"
+    (focus)="focusTab(tabIndex)"
+    (keydown)="handleKeyDown($event, tabIndex)"
+    (click)="selectTab(tabIndex)"
+  >
+    <dd-icon icon="coffee"></dd-icon>
+    {{ tab }}
+  </button>
+</div>
+
+<div class="tab-list__content">
+  <h1>some content</h1>
+</div>
