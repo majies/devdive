@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: var(--spacing-md-px) auto;
+}
+
+.header__logo {
+  justify-self: start;
+  margin-right: 74px;
+}
+
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: var(--spacing-2xl-px);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+
+
+
+/* useless styles beacuase im lazy */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: var(--line-height-md);
+}
+
+#kill\ me {
+  color: var(--clr-primary)
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 24px;
+  height: 32px;
+  background-color: var(--clr-primary);
+  border: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-md);
+  border-radius: 8px;
+}
+/* useless styles because im lazy */
+
+

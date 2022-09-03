@@ -2,6 +2,7 @@
 
 html, body {
   color-scheme: dark;
+  background-color: var(--clr-10);
 }
 
 /* CSS Resets */
