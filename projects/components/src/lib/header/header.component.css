@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   max-width: var(--max-width);
-  margin: var(--spacing-md-px) auto;
+  margin: auto;
+  padding-block: var(--spacing-md-px);
 }
 
 .header__logo {

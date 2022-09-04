@@ -1,16 +1,30 @@
 <dd-header></dd-header>
 
-<div style="margin-top: 64px"></div>
+<!--<dd-tab-group>-->
+<!--  <dd-tab label="Read the article">-->
+<!--    <h1>tab 1</h1>-->
+<!--  </dd-tab>-->
+<!--  <dd-tab label="Watch the video">-->
+<!--    <h1>tab 2</h1>-->
+<!--  </dd-tab>-->
+<!--  <dd-tab label="View the resources">-->
+<!--    <h1>tab 3</h1>-->
+<!--  </dd-tab>-->
+<!--</dd-tab-group>-->
 
-<dd-tab-list></dd-tab-list>
+<tabs-with-portal>
+  <tab-with-portal label="tab one">
+    component portal 1
+  </tab-with-portal>
 
-<!--<button dd-button>Login</button>-->
+  <tab-with-portal label="tab two">
+    component portal 2
+  </tab-with-portal>
 
-<!--<div></div>-->
-
-<!--<button dd-link>Home</button>-->
-
-<!--<dd-icon></dd-icon>-->
+  <tab-with-portal label="tab three">
+    component portal 3
+  </tab-with-portal>
+</tabs-with-portal>
 
 
 <router-outlet></router-outlet>

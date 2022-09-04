@@ -9,10 +9,18 @@
     (click)="selectTab(tabIndex)"
   >
     <dd-icon icon="coffee"></dd-icon>
-    {{ tab }}
+    {{ tab.label }}
   </button>
 </div>
 
-<div class="tab-list__content">
-  <h1>some content</h1>
+<div
+  *ngFor="let tab of tabs; let tabIndex = index"
+  class="tab-list__container"
+>
+  <div
+    *ngIf="activeTabIndex === tabIndex"
+    class="tab-list__content"
+  >
+    <ng-container [ngTemplateOutlet]="tab.content"></ng-container>
+  </div>
 </div>

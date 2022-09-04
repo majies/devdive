@@ -1,12 +1,14 @@
 import {NgModule} from "@angular/core";
-import {TabListComponent} from "./tab-list.component";
+import {TabGroupComponent} from "./tab-group.component";
 import {CommonModule} from "@angular/common";
 import {IconModule} from "../icon";
 import {TabButtonDirective} from "./tab-button.directive";
+import {TabContentComponent} from "./tab-content.component";
 
 @NgModule({
   declarations: [
-    TabListComponent,
+    TabGroupComponent,
+    TabContentComponent,
     TabButtonDirective
   ],
   imports: [
@@ -14,7 +16,8 @@ import {TabButtonDirective} from "./tab-button.directive";
     IconModule
   ],
   exports: [
-    TabListComponent
+    TabGroupComponent,
+    TabContentComponent,
   ]
 })
-export class TabListModule {}
+export class TabsModule {}

@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {PortalModule} from "@angular/cdk/portal";
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppComponent, TabsWithPortal, TabWithPortal} from './app.component';
 
-import {IconModule, LinkModule, ButtonModule, HeaderModule, TabListModule} from "@components";
+import {IconModule, LinkModule, ButtonModule, HeaderModule, TabsModule, TypographyModule} from "@components";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TabsWithPortal,
+    TabWithPortal
   ],
   imports: [
     BrowserModule,
@@ -17,7 +20,9 @@ import {IconModule, LinkModule, ButtonModule, HeaderModule, TabListModule} from 
     IconModule,
     ButtonModule,
     HeaderModule,
-    TabListModule
+    TabsModule,
+    TypographyModule,
+    PortalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

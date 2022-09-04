@@ -1,20 +1,20 @@
-import {Component, HostBinding, Input, QueryList, ViewChildren} from '@angular/core';
+import {Component, ContentChildren, HostBinding, Input, QueryList, ViewChildren} from '@angular/core';
 import {FocusKeyManager} from "@angular/cdk/a11y";
 import {TabButtonDirective} from "./tab-button.directive";
+import {TabContentComponent} from "./tab-content.component";
 
 @Component({
-  selector: 'dd-tab-list',
-  templateUrl: './tab-list.component.html',
-  styleUrls: ['./tab-list.component.css']
+  selector: 'dd-tab-group',
+  templateUrl: './tab-group.component.html',
+  styleUrls: ['./tab-group.component.css']
 })
-export class TabListComponent {
-  tabs = ['Read the article', 'Watch the video', 'View the resources'];
-
+export class TabGroupComponent {
   focusManager!: FocusKeyManager<TabButtonDirective>;
 
   @ViewChildren(TabButtonDirective) tabButtons!: QueryList<TabButtonDirective>;
+  @ContentChildren(TabContentComponent) tabs!: QueryList<TabContentComponent>;
 
-  @HostBinding('class.tab-list')
+  @HostBinding('class.tabs')
   protected readonly hbClassTabList = true;
 
   @Input() activeTabIndex: number = 0;
