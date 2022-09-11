@@ -43,11 +43,10 @@ export class TabsWithPortal {
   }
 
   ngAfterContentInit() {
-    this.portals = this.tabs
-      .map(({portalContent}) => {
-        const {templateRef, viewContainerRef} = portalContent;
-        return new CdkPortal(templateRef, viewContainerRef);
-      })
+    this.portals = this.tabs.map(({portalContent}) => {
+      const {templateRef, viewContainerRef} = portalContent;
+      return new CdkPortal(templateRef, viewContainerRef);
+    })
   }
 }
 
@@ -58,6 +57,12 @@ export class TabsWithPortal {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  angularChipState = false;
+
   title = 'devdive';
+
+  chipSelect() {
+    this.angularChipState = !this.angularChipState;
+  }
 }
 

@@ -12,19 +12,45 @@
 <!--  </dd-tab>-->
 <!--</dd-tab-group>-->
 
-<tabs-with-portal>
-  <tab-with-portal label="tab one">
-    component portal 1
-  </tab-with-portal>
 
-  <tab-with-portal label="tab two">
-    component portal 2
-  </tab-with-portal>
+<div style="display: flex; gap: 12px; justify-content: center; margin: 36px auto; max-width: 800px; flex-wrap: wrap">
+  <button dd-chip [active]="angularChipState" (click)="chipSelect()">Angular</button>
 
-  <tab-with-portal label="tab three">
-    component portal 3
-  </tab-with-portal>
-</tabs-with-portal>
+  <button dd-chip>Firebase</button>
+
+  <button dd-chip>Next.js</button>
+
+  <button dd-chip [active]="true">Netlify</button>
+
+  <button dd-chip>React</button>
+
+  <button dd-chip [active]="true">Github</button>
+
+  <button dd-chip>Vercel</button>
+
+  <button dd-chip>AWS</button>
+
+  <button dd-chip>Svelt Kit</button>
+
+  <button dd-chip>A11Y</button>
+
+  <button dd-chip [active]="true">Universal</button>
+</div>
+
+
+<!--<tabs-with-portal>-->
+<!--  <tab-with-portal label="tab one">-->
+<!--    component portal 1-->
+<!--  </tab-with-portal>-->
+
+<!--  <tab-with-portal label="tab two">-->
+<!--    component portal 2-->
+<!--  </tab-with-portal>-->
+
+<!--  <tab-with-portal label="tab three">-->
+<!--    component portal 3-->
+<!--  </tab-with-portal>-->
+<!--</tabs-with-portal>-->
 
 
 <router-outlet></router-outlet>

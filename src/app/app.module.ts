@@ -5,7 +5,15 @@ import {PortalModule} from "@angular/cdk/portal";
 import { AppRoutingModule } from './app-routing.module';
 import {AppComponent, TabsWithPortal, TabWithPortal} from './app.component';
 
-import {IconModule, LinkModule, ButtonModule, HeaderModule, TabsModule, TypographyModule} from "@components";
+import {
+  IconModule,
+  LinkModule,
+  ButtonModule,
+  HeaderModule,
+  TabsModule,
+  TypographyModule,
+  ChipModule
+} from "@components";
 
 @NgModule({
   declarations: [
@@ -23,6 +31,7 @@ import {IconModule, LinkModule, ButtonModule, HeaderModule, TabsModule, Typograp
     TabsModule,
     TypographyModule,
     PortalModule,
+    ChipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
